@@ -1,0 +1,37 @@
+<div class="jumbotron">
+  <h1>Uvo Prize App</h1>
+  <p>
+    <a class="btn btn-primary btn-lg" href=<%=new_prize_path%> role="button">Create one prize</a>
+  </p>
+</div>
+<hr>
+<% @prizes.each do |prize| %>
+<blockquote class="blockquote">
+  <p class="h4"><strong>Title: <%= prize[:title] %></strong></p>
+  <p class="h4">Description: <%= prize[:description] %></p>
+  <p class="h3">Number of existences: <%= prize[:existences] %></p>
+  <% if prize.conditions %>
+    <% prize.conditions.each do |condition| %>
+      <footer>
+      <% case condition[:condition_type] %>
+        <% when "M" %>
+          Wins prize subscribers multiples of <%= condition[:number] %> after <%= condition[:after_num] %> subscribers.
+        <% when "S" %>
+          Wins prize specific Subscriber number <%= condition[:number] %> after <%= condition[:after_num] %> subscribers.
+      <% end %>
+      <a href="/conditions/<%= condition[:id] %>/delete" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Remove</a>
+      </footer>
+    <% end %>
+  <% end %>
+</blockquote>
+<a href="/conditions/<%= prize[:id] %>/new" class="btn btn-default">
+  <span class="glyphicon glyphicon-plus-sign"></span> Add new condition
+</a>
+<a href="/prizes/<%= prize[:id] %>/edit" class="btn btn-default">
+  <span class="glyphicon glyphicon-edit"></span> Edit
+</a>
+<a href="/prizes/<%= prize[:id] %>/delete" class="btn btn-danger">
+  <span class="glyphicon glyphicon-remove"></span> Delete
+</a>
+<hr>
+<% end %>

@@ -1,0 +1,20 @@
+<h1>Edit a Prize</h1>
+<form action="/prizes/<%= @prize[:id] %>/update" method="post">
+  <div class="form-group">
+    <label>title</label>
+    <input type="text" class="form-control" name="title" value="<%= @prize[:title] %>">
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <input type="text" class="form-control" name="description" value="<%= @prize[:description] %>">
+  </div>
+  <div class="form-group">
+    <label class="col-sm-2 col-form-label">Existences</label>
+    <div class="col-sm-2">
+      <input type="number" class="form-control" name="existences" value="<%= @prize[:existences] %>">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">
+    Edit
+  </button>
+</form>
