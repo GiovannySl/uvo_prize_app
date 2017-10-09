@@ -7,7 +7,7 @@ class ConditionsController < ApplicationController
 
   def create
     @prize = Prize.find_by(id: condition_edit_params[:id].to_i)
-    @condition = @prize.conditions.new(condition_params.merge!({active: true}))
+    @condition = @prize.conditions.new(condition_params)
     if (condition_params["number"].to_i > 0) && (condition_params["after_num"].to_i >= 0) && @condition.save
       redirect_to prizes_path, flash: { success: 'The condition has been created' }
     else

@@ -6,6 +6,5 @@ class Condition < ApplicationRecord
   validates :number, presence: true
   validates :after_num, presence: true
   validates :condition_type, presence: true
-  validates :active, presence: true
   
 end

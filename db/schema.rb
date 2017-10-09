@@ -28,7 +28,6 @@ ActiveRecord::Schema.define(version: 20171008032835) do
     t.integer "number"
     t.integer "after_num"
     t.string "condition_type"
-    t.boolean "active"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "subscriber_id"
@@ -48,7 +47,6 @@ ActiveRecord::Schema.define(version: 20171008032835) do
 
   create_table "subscribers", force: :cascade do |t|
     t.string "email"
-    t.datetime "try_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -8,6 +8,7 @@
 require 'database_cleaner'
 DatabaseCleaner.strategy = :transaction
 DatabaseCleaner.clean
-subscriber = Subscriber.create(email: "user1@test.com", winner: false)
-prize = Prize.create(title: "Lavadora", description: "super buena", existences: 20, status:true)
-condition = prize.conditions.create(specific: true, value: 1, after: 0, status: true)
+prize = Prize.create(title: "prize1", description: "desc1", existences: 3, active:true)
+condition = prize.conditions.create(condition_type: "S", number: 1, after_num: 0)
+condition = prize.conditions.create(condition_type: "M", number: 2, after_num: 0)
+condition = prize.conditions.create(condition_type: "S", number: 1, after_num: 0)

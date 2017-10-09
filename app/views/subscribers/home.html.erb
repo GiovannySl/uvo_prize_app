@@ -1,0 +1,24 @@
+<div class="starter-template">
+  <h1>Uvo Prize App</h1>
+  <p class="lead">Welcome!, do you want to take part in our great drawing of prizes?, 
+      it is very easy, you just have to subscribe your e-mail and you will participate immediately, 
+      in addition we are going to send you an e-mail with all the available prizes. 
+      You can only participate once a day. What are you waiting for?, subscribe now!.</p>
+</div>
+
+<div class="row">
+  <div class="text-center">
+    <div class="col-md-4 col-md-offset-4">
+        <form action=<%= subscriber_path %> method="post">
+          <div class="form-group">
+            <label>Email address</label>
+            <input type="email" class="form-control" name="email">
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Subscribe!
+          </button>
+        </form>
+    </div>
+  </div>
+</div>
+

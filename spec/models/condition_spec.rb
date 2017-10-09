@@ -22,11 +22,6 @@ RSpec.describe Condition, type: :model do
           @condition = @prize.conditions.build(@condition.as_json)
           expect(@condition.save).to be false
         end
-        it "Without active" do
-          @condition = build(:condition, active: nil)
-          @condition = @prize.conditions.build(@condition.as_json)
-          expect(@condition.save).to be false
-        end
       end
       it "With valid attributes and without prize" do
         @condition = build(:condition)

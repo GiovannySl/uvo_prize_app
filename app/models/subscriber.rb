@@ -3,8 +3,6 @@ class Subscriber < ApplicationRecord
   has_many :audit_logs
 
   validates :email, presence: true
-  validates :email, uniqueness: true
-  validates :try_date, presence: true
 
   after_create do |subscriber|
     # Send and email with all actives prizes
