@@ -1,0 +1,42 @@
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li><a href="#" class="active">Create a condition</a></li>
+</ol>
+<h1>Create a condition</h1>
+<div class="container">
+  <form action="/conditions/<%= @prize_id %>/create" method="post">
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Key number</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="number">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">After subscriber number</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" name="after_num">
+      </div>
+    </div>
+    <fieldset class="form-group">
+      <div class="row">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="condition_type" id="condition_type1" value="S" checked>
+            Win prize subscriber with specific number
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="condition_type" id="condition_type2" value="M">
+            Wins prize subscribers multiples of key number
+          </label>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Create!</button>
+      </div>
+    </div>
+  </form>
+</div>
