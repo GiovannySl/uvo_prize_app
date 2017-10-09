@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  
   get 'conditions/:id/new',     to: 'conditions#new',     as: :new_condition
   post 'conditions/:id/create', to: 'conditions#create'
   get 'conditions/:id/delete',  to: 'conditions#delete'
