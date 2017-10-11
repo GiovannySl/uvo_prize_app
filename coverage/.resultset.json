@@ -1,7 +1,71 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/controllers/subscribers_controller.rb": [
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/mailers/subscriber_mailer.rb": [
+        1,
+        1,
+        33,
+        33,
+        33,
+        null,
+        null
+      ],
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/mailers/application_mailer.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/models/audit_log.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/models/condition.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/models/prize.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/models/subscriber.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        33,
+        null,
+        null
+      ],
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/controllers/subscribers_controller.rb": [
         1,
         1,
         1,
@@ -80,71 +144,44 @@
         null,
         null
       ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/controllers/application_controller.rb": [
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/controllers/conditions_controller.rb": [
         1,
         1,
-        null
-      ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/mailers/subscriber_mailer.rb": [
+        1,
+        null,
         1,
         1,
-        33,
-        33,
-        33,
+        null,
+        null,
+        1,
+        2,
+        2,
+        1,
+        0,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        2,
+        null,
+        1,
+        3,
         null,
         null
       ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/mailers/application_mailer.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/models/audit_log.rb": [
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/models/condition.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/models/prize.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/models/subscriber.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        33,
-        null,
-        null
-      ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/controllers/prizes_controller.rb": [
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/controllers/prizes_controller.rb": [
         1,
         1,
         1,
@@ -166,140 +203,103 @@
         null,
         null,
         1,
-        0,
-        null,
-        null,
+        2,
+        2,
         1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        0,
         null,
         null,
         null,
         1,
-        0,
-        0,
-        0,
+        5,
+        5,
+        2,
         null,
-        0,
+        3,
+        null,
+        null,
+        null,
+        1,
+        2,
+        2,
+        1,
+        1,
+        null,
+        1,
         null,
         null,
         null,
         1,
         1,
-        4,
+        9,
         null,
         1,
-        0,
+        9,
         null,
         1,
-        0,
-        0,
-        0,
+        5,
+        5,
+        2,
         null,
-        0,
+        3,
         null,
         null,
         null
       ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/controllers/conditions_controller.rb": [
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/jobs/application_job.rb": [
-        0,
-        0
-      ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/channels/application_cable/connection.rb": [
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/channels/application_cable/channel.rb": [
-        0,
-        0,
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/jobs/application_job.rb": [
         0,
         0
       ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/helpers/subscribers_helper.rb": [
-        0,
-        0
-      ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/helpers/prizes_helper.rb": [
-        0,
-        0
-      ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/helpers/conditions_helper.rb": [
-        0,
-        0
-      ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/helpers/application_helper.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/models/application_record.rb": [
-        0,
-        0,
-        0
-      ],
-      "/home/giovannysl/Desktop/Pruebas/Uvo_tech_group/uvo_prize_app/app/models/user.rb": [
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/models/user.rb": [
         0,
         null,
         null,
         0,
+        0,
+        0
+      ],
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/models/application_record.rb": [
+        0,
+        0,
+        0
+      ],
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/helpers/application_helper.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/helpers/prizes_helper.rb": [
+        0,
+        0
+      ],
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/helpers/conditions_helper.rb": [
+        0,
+        0
+      ],
+      "/home/giovannysl/gsalazar/uvo_prize_app/app/helpers/subscribers_helper.rb": [
         0,
         0
       ]
     },
-    "timestamp": 1507704525
+    "timestamp": 1507765211
   }
 }

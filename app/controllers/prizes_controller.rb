@@ -20,16 +20,15 @@ class PrizesController < ApplicationController
 
   def edit
     @prize = Prize.find_by(id: prize_edit_params[:id].to_i)
+    unless @prize
+      redirect_to edit_prize_path, flash: { error: 'Invalid params' }
+    end
   end
 
   def update
     @prize = Prize.find_by(id: prize_edit_params[:id].to_i)
     if validate_prize_params(prize_params)
-      if @prize.update(prize_params)
-        redirect_to prizes_path, flash: { alert: 'The prize has been edited' }
-      else
-        redirect_to edit_prize_path
-      end
+      redirect_to prizes_path, flash: { alert: 'The prize has been edited' }
     else
       redirect_to edit_prize_path, flash: { error: 'Invalid params' }
     end
@@ -37,7 +36,8 @@ class PrizesController < ApplicationController
 
   def delete
     @prize = Prize.find_by(id: prize_edit_params[:id].to_i)
-    if @prize.update_columns(active: false)
+    if @prize
+      @prize.update_columns(active: false)
       redirect_to prizes_path, flash: { alert: 'The prize has been deleted' }
     else
       redirect_to prizes_path, flash: { error: 'The prize could not been deleted' }
