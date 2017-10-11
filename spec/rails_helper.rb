@@ -58,3 +58,12 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 end
+
+def auth_user
+  user = build(:user, password: 'secret')
+  user.save
+  visit '/users/sign_in'
+  fill_in 'Email', with: user.email
+  fill_in 'Password', with: 'secret'
+  click_button 'Log in'
+end
