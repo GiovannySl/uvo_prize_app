@@ -7,21 +7,28 @@ class ConditionsController < ApplicationController
   end
 
   def create
-    @prize = Prize.find_by(id: condition_edit_params[:id].to_i)
-    @condition = @prize.conditions.new(condition_params)
-    if (condition_params["number"].to_i > 0) && (condition_params["after_num"].to_i >= 0) && @condition.save
-      redirect_to prizes_path, flash: { success: 'The condition has been created' }
+    #debugger
+    prize = Prize.find_by(id: condition_edit_params[:id].to_i)
+    if prize
+      @condition = Condition.new(condition_params)
+      @condition = prize.conditions.build(@condition.as_json)
+      if (condition_params["number"].to_i > 0) && (condition_params["after_num"].to_i >= 0) && @condition.save
+        redirect_to prizes_path, flash: { success: 'The condition has been created' }
+      else
+        redirect_to new_condition_path, flash: { error: 'Invalid params' }
+      end
     else
-      redirect_to new_condition_path, flash: { error: 'Invalid params' }
+      redirect_to prizes_path, flash: { error: 'Prize not found' }
     end
   end
 
   def delete
     @condition = Condition.find_by(id: condition_edit_params[:id].to_i)
-    if @condition.delete
+    if  @condition
+      @condition.delete
       redirect_to prizes_path, flash: { alert: 'The condition has been deleted' }
     else
-      redirect_to prizes_path, flash: { error: 'The condition could not been deleted' }
+      redirect_to prizes_path, flash: { error: 'Condition not found' }
     end
   end
 

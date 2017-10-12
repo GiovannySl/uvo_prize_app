@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Intall gems
+* `bunlde`
 
-Things you may want to cover:
+Set up DB 
+* `rails db:create && rails db:migrate`
 
-* Ruby version
+Run seed db
+* `rails db:seed`
 
-* System dependencies
+Run tests
+* `rspec`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+View the code coverage
+* `/coverage/index.html`

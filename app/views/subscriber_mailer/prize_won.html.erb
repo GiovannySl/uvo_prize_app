@@ -1,0 +1,9 @@
+<h1>Hi, <%= @subscriber.email %></h1>
+
+<p>There is a list of all current prizes: </p>
+<br> 
+<% @prizes.each do |prize| %>
+<p>Title: <%= prize.title %></p>
+<p>Description: <%= prize.description %></p>
+<br> 
+<% end %> 
